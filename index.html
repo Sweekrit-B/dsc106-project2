@@ -167,15 +167,22 @@
 
                 <figure>
                     <img src="Positive Graph (Final Version).png" alt="" />
-                    <figcaption>BRIEF CAPTION HERE.</figcaption>
+                    <figcaption>Countries grouped into six quantiles of foreign aid intensity show a clear positive correlation between aid received and health burden.</figcaption>
                 </figure>
 
                 <p>Design Decisions and Rationale:</p>
 
                 <ul>
-                    <li>RATIONALE_1</li>
-                    <li>RATIONALE_2</li>
-                    <li>RATIONALE_3</li>
+                    <li>We grouped our data by countries and calculated the mean value for each health burden indicator, with average ODA received as a % of gross capital formation as our measure of aid. We chose average ODA received as a % of gross capital formation
+                    as our foreign aid measures becuase it showed the most clear positive relationship compared to other aid metrics.</li>
+                    
+                    <li>We chose to group our data into hexiles over something like quantiles or quintiles because it showed the most clear positive relationship between all burden indicator and foreign aid received.
+                        By grouping our data into ordinal categories we were able to reduce noise and clearly present the positive trends.</li>
+                    
+                    <li>By creating seperate graphs for each disease metric we reduce visual clutter and allow for each indicator to be clearly interpreted. It also shows a
+                        consistent positive relationship across all health burden indicators which helps strengthen our arguement that there is a positive trend between foreign aid received and health burden indicators. </li>
+                        
+                    <li>The annotations on our chart add an extra persuasive element to our visuals, both annotations help guide the viewers interpretation of the data as well as highlight patterns that support our arguement.</li>
                 </ul>
             </section>
 
@@ -184,15 +191,17 @@
 
                 <figure>
                     <img src="Negative Graph (Final Version).png" alt="" />
-                    <figcaption>BRIEF CAPTION HERE.</figcaption>
+                    <figcaption>When evaluating year averaged data, higher levels of foreign aid are associated with lower health burden indicators.</figcaption>
                 </figure>
 
                 <p>Design Decisions and Rationale:</p>
 
                 <ul>
-                    <li>RATIONALE_1</li>
-                    <li>RATIONALE_2</li>
-                    <li>RATIONALE_3</li>
+                    <li>We chose a scatterplot instead of a bar chart to display the continuous relationship between foreign aid and health outcomes. By doing this we can show both the negative relationship and patterns/variability of our data that would have otherwise been hidden with a bar chart.</li>
+                    <li>We applied a log scaling to our data because both the health indicator and foreign aid values were highly skewed. Doing this helped compress extreme values and reduce the influence of outliers in our data, making the relationship easier to see. </li>
+                    <li>We used a LOWESS regression becuase the relationship between foreign aid and health burden is nonlinear. The trend line and R correlation value help guide the viewers interpretation of the data by making the downwards relationship more clear.</li>
+                    <li>As with our first visual the inclusion of the annotations is meant to add an extra persuasive element to the graph and guide the viewer to our argument that, as more foreign aid is recieved, health burden indicators tend to decrease. Both annotations
+                        highlight specific moments and values to support that increased foreign aid is associated with lower health burden indicators.</li>
                 </ul>
             </section>
 
